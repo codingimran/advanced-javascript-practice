@@ -1,0 +1,30 @@
+const stopWatch = () => {
+  let count = 0;
+  return () => {
+    count++;
+    return count;
+  };
+};
+
+const clock1 = stopWatch();
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+
+console.log(`
+`);
+
+const clock2 = stopWatch();
+console.log(clock2());
+console.log(clock2());
+console.log(clock2());
+console.log(clock2());
+console.log(clock2());
+console.log(clock1());
+console.log(clock2());
+console.log(clock1());
